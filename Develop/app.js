@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = 80;
+const port = process.env.PORT || 3000;
 const fs = require('fs');
 const filesPath = path.join(__dirname, 'public');
 
